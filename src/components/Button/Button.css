@@ -1,0 +1,47 @@
+:root {
+    --background-color: #5a67d8;
+    --text-color: #fff;
+}
+
+.btn {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 2px solid var(--background-color);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    border-radius: 696969px;
+    padding: 5px 8px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-content {
+    margin: 0 10px;
+}
+
+.btn:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-size-large {
+    font-size: 22px;
+    padding: 10px 20px;
+}
+
+.btn-size-medium {
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.btn-size-small {
+    font-size: 12px;
+    padding: 4px 7px;
+}
