@@ -32,7 +32,7 @@ function ProductContent(props) {
     props.handleOnVariationClick(Number(e.target.parentNode.children[0].value));
   }
 
-  let selectedProduct = variations.find((p, i) => {
+  let selectedVariation = variations.find((p, i) => {
     return p.id === selectedVariationID;
   });
 
@@ -62,26 +62,26 @@ function ProductContent(props) {
         </a>
       </h3>
       <p className="brand">Thương hiệu: {brand ? brand : "No brand"}</p>
-      <p className="quantity">Còn lại: {selectedProduct.quantity} Sản phẩm</p>
+      <p className="quantity">Còn lại: {selectedVariation.quantity} Sản phẩm</p>
       <div className="wrapper-price">
         <div className="final-price">
           {formatNumber(
-            selectedProduct.price -
-              selectedProduct.price * selectedProduct.percentSaleOff
+            selectedVariation.price -
+              selectedVariation.price * selectedVariation.percentSaleOff
           )}
           &nbsp;₫
         </div>
         <div className="origin-price">
-          {formatNumber(selectedProduct.price)} &nbsp;₫
+          {formatNumber(selectedVariation.price)} &nbsp;₫
         </div>
         <div className="sale-price">
-          -{selectedProduct.percentSaleOff * 100}%
+          -{selectedVariation.percentSaleOff * 100}%
         </div>
       </div>
       <div className="wrapper-color">
         <div className="text">Màu sắc</div>
         <div className="list-color">
-          <p className="color-text">{selectedProduct.name}</p>
+          <p className="color-text">{selectedVariation.name}</p>
           <ul>{variationsJSX}</ul>
         </div>
       </div>{" "}
