@@ -1,6 +1,7 @@
 import "./App.css";
 import Button from "./components/Button/Button";
 import Article from "./components/Article/Article";
+import Shopping from "./components/Shopping/Shopping";
 
 function App() {
 
@@ -20,8 +21,11 @@ function App() {
 
   return (
     <div className="App">
-      <Button isLoading={ true }>React JS</Button>
-      <Article data={ news_data } type="latest"></Article>    
+      {/* <Button isLoading={ true }>React JS</Button> */}
+      {/* <Article data={ news_data } type="latest"></Article>     */}
+
+      <Shopping />
+      
     </div>
   );
 }
