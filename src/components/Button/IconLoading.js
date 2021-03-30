@@ -6,16 +6,16 @@ function IconLoading() {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 100 100"
       preserveAspectRatio="xMidYMid"
-      width="28" 
-      height="28"
+      width="30" 
+      height="30"
     >
       <circle
         cx={50}
         cy={50}
         fill="none"
         stroke="currentColor"
-        strokeWidth={10}
-        r={35}
+        strokeWidth={15}
+        r={40}
         strokeDasharray="164.93361431346415 56.97787143782138"
         transform="rotate(120.057 50 50)"
       >
